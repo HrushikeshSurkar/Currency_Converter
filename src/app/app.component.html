@@ -1,0 +1,108 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+
+
+<!-- heading row -->
+
+<div class="row">
+  <div class="col-lg-4 col-md-4"></div>
+  <div class="col-lg-4 col-md-4">
+    <div class="flex-container" style="font-family: 'Pacifico', cursive;">
+      currency converter
+    </div>
+  </div>
+  <div class="col-lg-4"></div>
+</div>
+
+<!-- hr -->
+<div class="row">
+  <div class="col-lg-4 col-md-4 col-4"></div>
+  <div class="col-lg-4 col-md-4 col-4">
+    <hr style="width: 100%; background-color: black;border: 2px solid black;">
+
+  </div>
+  <div class="col-lg-4 col-md-4"></div>
+</div>
+
+<!-- main div -->
+<div class="row">
+  <div class="col-lg-3"></div>
+  <div class="col-lg-6">
+
+    <div class="container" style="background-color: gray; border-radius: 4px;">
+      <div class="text">
+        Amount to Convert:
+      </div>
+      <div class="input">
+
+
+        <input type="number" #box placeholder="0" min="1" max="1000000">
+
+      </div>
+      <div class="row">
+
+        <div class="col-1 text-white">
+          from:
+        </div>
+        <div class="col-5">
+          <!-- <input type="text" #a [(ngModel)]="a.value"> -->
+          <select class="from" #a name="from" (click)="getA(a.value)">
+
+            <option></option>
+            <option value="USD">USD</option>
+            <option value="INR">INR</option>
+          </select>
+
+        </div>
+
+        <div class="col-1 text-white">
+          To:
+        </div>
+        <div class="col-5">
+          <!-- <input type="text" #b [(ngModel)]="b.value"> -->
+          <select class="from" #b name="from" (click)="getB(b.value)">
+            <option></option>
+            <option value="INR">INR</option>
+            <option value="USD">USD</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- button -->
+      <div class="row p-4">
+        <div class="col-9"></div>
+        <div class="col-3 ">
+          <button class="btn btn-primary" style="width: 100%;" (click)="getValue(box.value)">
+            Convert
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3"></div>
+</div>
+
+
+<div class="row">
+  <div class="col-4"></div>
+  <div class="col-6">
+    <div class="row" style="margin-top: 20px;">
+      <div class="col-2"></div>
+      <div class="col-4">
+        <div class="flex-container1" style="font-family: 'Pacifico', cursive;">
+          converter Amount :
+        </div>
+      </div>
+
+      <div class="col-4 flex-container1" style="color: rgb(3, 179, 3);">{{temp}}</div>
+    </div>
+  </div>
+  <div class="col-2"></div>
+</div>
+
+
+<router-outlet></router-outlet>
