@@ -1,4 +1,4 @@
-# Currency Converter (Angular)
+# Currency Converter App Using Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
@@ -15,6 +15,10 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Live Site
 
 You can see the live site at [Currency Converter](https://hrushikeshsurkar.github.io/Currency_Converter/).
+
+## Download
+
+You can download the project source code as a zip file [here](https://github.com/HrushikeshSurkar/Currency_Converter/archive/refs/tags/Currency-Converter-app-angular.zip).
 
 ## Further Help
 
